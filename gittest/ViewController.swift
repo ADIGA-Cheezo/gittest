@@ -12,8 +12,11 @@ class ViewController: UIViewController {
 let message = "test git"
     override func viewDidLoad() {
         super.viewDidLoad()
-        print (message)
+        ret(string: message)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    func ret (string: String) {
+        print("\(string.reversed()) you")
     }
 
     override func didReceiveMemoryWarning() {
